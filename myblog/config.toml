@@ -1,10 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-
-[[params.mainMenu]]
-    link = "/photography"
-    text = "photography"
+title = "The personal blog of Seth Moeckel"
 
 [[params.mainMenu]]
     link = "/posts"
@@ -12,4 +8,4 @@ title = "My New Hugo Site"
 
 [[params.mainMenu]]
     link = "/about"
-    text = "who dis?"
+    text = "who is seth moeckel?"
