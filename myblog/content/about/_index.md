@@ -6,16 +6,8 @@ maxWidth: "800x"
 clickablePhotos: true
 ---
 
-# Hello world
+## Just a note
 
-This is another markdown page, it's pretty cool.
+Hey there! While it's exciting to have people viewing this site, you should know... this is a work in progress (and not really ready for consumption). 
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("hello world")
-}
-```
+Come back soon to see something a little more developed.
