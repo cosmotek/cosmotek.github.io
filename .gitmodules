@@ -1,3 +1,6 @@
 [submodule "myblog/themes/sam"]
 	path = myblog/themes/sam
 	url = https://github.com/victoriadrake/hugo-theme-sam.git
+[submodule "myblog/public"]
+	path = myblog/public
+	url = git@github.com:cosmotek/cosmotek.github.io.git
