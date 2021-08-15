@@ -4,7 +4,7 @@ set -e
 
 # build the project
 rm -r docs
-hugo -t sam
+hugo -t showfolio
 
 # commit changes
 mkdir -p docs

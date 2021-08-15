@@ -19,7 +19,7 @@ All files relating to the content itself reside in `content/`. Please see the do
 ### Testing
 
 For those looking to make modifications to this site, it may be helpful to know how to build the website, and how to run it locally. Executing `hugo -t book` will build the site and store all resulting files in `public/`. If you're looking to deploy the site, see build instructions in the `Deployment` section below.
-To run a dev server locally (with hot reloading), execute `hugo server --minify --theme sam`.
+To run a dev server locally (with hot reloading), execute `hugo server --minify --theme showfolio`.
 
 ### Deployment
 
