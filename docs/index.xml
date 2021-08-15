@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home of John Doe 👋 on cosmotek</title>
+    <title>Seth Moeckel, Fullstack Software Engineer 👋 on cosmotek</title>
     <link>https://cosmotek.github.io/</link>
-    <description>Recent content in Home of John Doe 👋 on cosmotek</description>
+    <description>Recent content in Seth Moeckel, Fullstack Software Engineer 👋 on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -13,9 +13,7 @@
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cosmotek.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
+      <description>TODO&amp;hellip;</description>
     </item>
     
     <item>
@@ -25,6 +23,15 @@ Hugo makes use of a variety of open source projects including:
       
       <guid>https://cosmotek.github.io/blog/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://cosmotek.github.io/experience/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/</guid>
+      <description>TODO&amp;hellip;</description>
     </item>
     
     <item>
