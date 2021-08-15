@@ -10,3 +10,5 @@ type: about
 ![me_and_karalei](/about_me_pic.png)
 
 TODO...
+
+Columbus Ohio 

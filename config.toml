@@ -22,7 +22,7 @@ theme = "showfolio"
 
 [params.homepage.codepen]
   username = "apvarun"
-  pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ"]
+  pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ", "MQaRKL", "RxodrP", "BmXGdm", "wdVypQ", "MQaRKL", "RxodrP", "BmXGdm", "wdVypQ"]
 
 [params.homepage.resume]
   skills = ["Visual Design", "Product Development"]
