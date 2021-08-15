@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on The personal website of Seth Moeckel</title>
+    <link>https://cosmotek.github.io/tags/</link>
+    <description>Recent content in Tags on The personal website of Seth Moeckel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Feb 2018 12:41:46 -0500</lastBuildDate><atom:link href="https://cosmotek.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://cosmotek.github.io/tags/blog/</link>
+      <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
+      
+      <guid>https://cosmotek.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>story</title>
+      <link>https://cosmotek.github.io/tags/story/</link>
+      <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
+      
+      <guid>https://cosmotek.github.io/tags/story/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
