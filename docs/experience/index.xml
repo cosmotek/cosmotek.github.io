@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experience on cosmotek</title>
+    <link>https://cosmotek.github.io/experience/</link>
+    <description>Recent content in Experience on cosmotek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Senior Software Engineer</title>
+      <link>https://cosmotek.github.io/experience/sentral/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/sentral/</guid>
+      <description>Web Development on a game-changing lifestyle apartments company built on the combination of long term leasing, tenant-driven home sharing and furnished hotel stays.</description>
+    </item>
+    
+    <item>
+      <title>Full Stack Software Engineer (Contactor)</title>
+      <link>https://cosmotek.github.io/experience/recspot/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/recspot/</guid>
+      <description>Led Software Architecture and Backend Development for an amazing peer-2-peer content rating and recommendations platform. Later advised and helped drive hiring processes, as well as managing a highly distributed team of international developers.</description>
+    </item>
+    
+    <item>
+      <title>Partner, Consultant</title>
+      <link>https://cosmotek.github.io/experience/modweb/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/modweb/</guid>
+      <description>Led Software Architecture, Mobile Design &amp;amp; Development, DevOps and Backend Development for the new relaunch of a premier gig-economy solution for facilities management.</description>
+    </item>
+    
+    <item>
+      <title>Full Stack Software Engineer</title>
+      <link>https://cosmotek.github.io/experience/olive/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/olive/</guid>
+      <description>Distributed Systems, Windows Systems and Web Development on the world’s first AI-as-a-service for healthcare.</description>
+    </item>
+    
+    <item>
+      <title>Founder, Freelance Developer</title>
+      <link>https://cosmotek.github.io/experience/eistudios/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/eistudios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fullstack Software Engineer (Contractor)</title>
+      <link>https://cosmotek.github.io/experience/rapchat/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/rapchat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineering Fellow</title>
+      <link>https://cosmotek.github.io/experience/crosschx/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/crosschx/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

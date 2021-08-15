@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Seth Moeckel, Fullstack Software Engineer 👋 on cosmotek</title>
+    <title>cosmotek</title>
     <link>https://cosmotek.github.io/</link>
-    <description>Recent content in Seth Moeckel, Fullstack Software Engineer 👋 on cosmotek</description>
+    <description>Recent content on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,8 @@
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cosmotek.github.io/about/</guid>
-      <description>TODO&amp;hellip;
-Columbus Ohio</description>
+      <description>Hey there!
+My name is Seth Moeckel, and I really enjoy designing &amp;amp; building digital products. I was about 12 years old when I started messing with computers. I really didn&amp;rsquo;t understand much, but I wanted to know how things worked, and how I could make my ideas real. I started taking appliances apart, building robots with microcontrollers, and writing small scripts for my Raspberry Pi. It took a while but I began to grasp programming, and how to build my own programs.</description>
     </item>
     
     <item>
@@ -24,15 +24,6 @@ Columbus Ohio</description>
       
       <guid>https://cosmotek.github.io/blog/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Experience</title>
-      <link>https://cosmotek.github.io/experience/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cosmotek.github.io/experience/</guid>
-      <description>Over 5 years of experience working with various technologies including web &amp;amp; mobile development, systems and infrastructure work, big data and more. I&amp;rsquo;m driven, intuitive, resourceful, optimistic, quick to learn, and I lead by serving first. I&amp;rsquo;m a self-taught self-starter, I love design and solving problems. I&amp;rsquo;ve worked in start-ups and midsized companies, and as a freelancer or consultant. I’m always excited to work with other passionate people to build something great!</description>
     </item>
     
     <item>
@@ -70,6 +61,69 @@ Columbus Ohio</description>
       <guid>https://cosmotek.github.io/blog/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
 &lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Senior Software Engineer</title>
+      <link>https://cosmotek.github.io/experience/sentral/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/sentral/</guid>
+      <description>Web Development on a game-changing lifestyle apartments company built on the combination of long term leasing, tenant-driven home sharing and furnished hotel stays.</description>
+    </item>
+    
+    <item>
+      <title>Full Stack Software Engineer (Contactor)</title>
+      <link>https://cosmotek.github.io/experience/recspot/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/recspot/</guid>
+      <description>Led Software Architecture and Backend Development for an amazing peer-2-peer content rating and recommendations platform. Later advised and helped drive hiring processes, as well as managing a highly distributed team of international developers.</description>
+    </item>
+    
+    <item>
+      <title>Partner, Consultant</title>
+      <link>https://cosmotek.github.io/experience/modweb/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/modweb/</guid>
+      <description>Led Software Architecture, Mobile Design &amp;amp; Development, DevOps and Backend Development for the new relaunch of a premier gig-economy solution for facilities management.</description>
+    </item>
+    
+    <item>
+      <title>Full Stack Software Engineer</title>
+      <link>https://cosmotek.github.io/experience/olive/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/olive/</guid>
+      <description>Distributed Systems, Windows Systems and Web Development on the world’s first AI-as-a-service for healthcare.</description>
+    </item>
+    
+    <item>
+      <title>Founder, Freelance Developer</title>
+      <link>https://cosmotek.github.io/experience/eistudios/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/eistudios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fullstack Software Engineer (Contractor)</title>
+      <link>https://cosmotek.github.io/experience/rapchat/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/rapchat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineering Fellow</title>
+      <link>https://cosmotek.github.io/experience/crosschx/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/crosschx/</guid>
+      <description></description>
     </item>
     
   </channel>
