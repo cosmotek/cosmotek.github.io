@@ -20,27 +20,23 @@ theme = "showfolio"
   description = "I'm a software engineer who's passionate about building innovative & original digital experiences."
   contact = "mailto:seth.moeckel@gmail.com"
 
-[params.homepage.codepen]
-  username = "apvarun"
-  pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ", "MQaRKL", "RxodrP", "BmXGdm", "wdVypQ", "MQaRKL", "RxodrP", "BmXGdm", "wdVypQ"]
+[[params.homepage.projects]]
+  title = "iVueit Mobile App"
+  description = "I was one of two core engineers behind the iVueit v2 mobile app. We built out a new Flutter app, Go APIs and custom infrastructure"
+  url = "https://ivueit.com/"
+  image = "/ivueit.png"
 
-[params.homepage.resume]
-  skills = ["Visual Design", "Product Development"]
+[[params.homepage.projects]]
+  title = "LedFS"
+  description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
+  url = "https://github.com/cosmotek/ledfs"
+  image = "/ledfs.png"
 
-[[params.homepage.resume.work]]
-  name = "Google"
-  role = "Product Engineer"
-  duration = "Nov 2019 - Apr 2021"
-
-[[params.homepage.resume.work]]
-  name = "Amazon"
-  role = "Sr. UX Designer"
-  duration = "Jan 2016 - Oct 2019"
-
-[[params.homepage.resume.courses]]
-  name = "Design Principles"
-  provider = "UX Academy"
-  duration = "Nov 2019 - Jan 2020"
+[[params.homepage.projects]]
+  title = "API Commons"
+  description = "I maintain a collection of API libraries for everything from authentication to geolocation (preview is of a dev sms/email debug server)"
+  url = "https://github.com/cosmotek/api-commons"
+  image = "/api-commons.png"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/seth-m-b8773b123/"
