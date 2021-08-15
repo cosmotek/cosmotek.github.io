@@ -5,7 +5,7 @@ theme = "showfolio"
 
 [params]
   name = "Seth Moeckel"
-  description = "Fullstack Software Engineer"
+  description = "Seth Moeckel, Fullstack Software Engineer 👋"
   author = "Seth Moeckel"
   authorEmail = "seth.moeckel@gmail.com"
   authorImage = "/photo.png"
@@ -16,8 +16,8 @@ theme = "showfolio"
 
 [params.homepage]
   title = "Hey 👋 I'm Seth"
-  tagline = "Fullstack Software Engineer"
-  description = "I create "
+  tagline = "I build cool sh*t"
+  description = "I'm a software engineer who's passionate about building innovative & original digital experiences."
   contact = "mailto:seth.moeckel@gmail.com"
 
 [params.homepage.codepen]
@@ -52,7 +52,6 @@ theme = "showfolio"
 [build]
   writeStats = true
 
-# syntax highlight settings
 [markup]
   [markup.highlight]
     style = "dracula"
