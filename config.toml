@@ -9,7 +9,7 @@ theme = "showfolio"
   author = "Seth Moeckel"
   authorEmail = "seth.moeckel@gmail.com"
   authorImage = "/photo.png"
-  autoDarkMode = true
+  autoDarkMode = false
 
   copyright = "Copyright © 2021 - Seth Moeckel · All rights reserved"
   favicon = "favicon.ico"
