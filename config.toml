@@ -1,6 +1,6 @@
 baseURL = "https://cosmotek.github.io"
 languageCode = "en-us"
-title = "The personal blog of Seth Moeckel"
+title = "The personal website of Seth Moeckel"
 
 [[params.mainMenu]]
     link = "/posts"
