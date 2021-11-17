@@ -5,7 +5,8 @@ website: https://sentral.com/
 title: Senior Software Engineer
 location: Remote
 date: "2021-03-01"
-current_role: true
+end_date: "2021-10-18"
+current_role: false
 icon: /sentral.ico
 ---
 
