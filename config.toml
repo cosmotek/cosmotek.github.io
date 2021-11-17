@@ -21,22 +21,28 @@ theme = "showfolio"
   contact = "mailto:seth.moeckel@gmail.com"
 
 [[params.homepage.projects]]
+  title = "Dropship"
+  description = "P2P videogame downloader with remote controls and a reverse engineered Stream integration"
+  url = "https://github.com/cosmotek/dropship"
+  image = "/dropship.png"
+
+[[params.homepage.projects]]
   title = "iVueit Mobile App"
   description = "I was one of two core engineers behind the iVueit v2 mobile app. We built out a new Flutter app, Go APIs and custom infrastructure"
   url = "https://ivueit.com/"
   image = "/ivueit.png"
 
 [[params.homepage.projects]]
-  title = "LedFS"
-  description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
-  url = "https://github.com/cosmotek/ledfs"
-  image = "/ledfs.png"
-
-[[params.homepage.projects]]
   title = "API Commons"
   description = "I maintain a collection of API libraries for everything from authentication to geolocation (preview is of a dev sms/email debug server)"
   url = "https://github.com/cosmotek/api-commons"
   image = "/api-commons.png"
+
+[[params.homepage.projects]]
+  title = "LedFS"
+  description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
+  url = "https://github.com/cosmotek/ledfs"
+  image = "/ledfs.png"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/seth-m-b8773b123/"
