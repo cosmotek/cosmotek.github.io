@@ -5,7 +5,8 @@ website: https://therecspot.com/
 title: Full Stack Software Engineer (Contactor)
 location: Remote
 date: "2020-11-01"
-current_role: true
+end_date: "2021-12-30"
+current_role: false
 icon: /recspot.webp
 ---
 

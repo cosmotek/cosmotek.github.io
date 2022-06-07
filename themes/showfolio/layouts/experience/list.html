@@ -16,10 +16,10 @@
     <div class="flex space-x-6 justify-start items-start mb-2">
       {{ if .Params.icon }}
       <div class="w-16 h-16 flex-shrink-0">
-        <img class="rounded-lg flex-shrink-0" src="{{.Params.icon}}"/>
+        <img class="bg-slate-700 m-0 rounded-lg flex-shrink-0" src="{{.Params.icon}}"/>
       </div>
       {{ else }}
-      <div class="w-16 h-16">
+      <div class="w-16 h-16 bg-slate-400 rounded-lg">
         {{/* <img class="rounded-lg p-0 m-0" src="{{.Params.icon}}"/> */}}
       </div>
       {{ end }}
