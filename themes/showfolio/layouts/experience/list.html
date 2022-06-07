@@ -1,0 +1,45 @@
+{{ define "main" }}
+<article
+  class="mb-16 max-w-5xl mx-auto px-4 prose prose-blue dark:prose-dark"
+>
+  <h1 class="font-bold text-3xl mb-5">{{.Title}}</h1>
+  {{ .Content }}
+
+  <h2 class="font-bold text-4xl">Work History</h2>
+  {{ range .Pages }}
+
+  {{ $startDate := .Params.date | time }}
+  {{ $endDate := (cond (ne .Params.end_date nil) .Params.end_date now) | time }}
+  {{ $diff := div ($endDate.Sub $startDate).Hours 730 }}
+
+  <div class="mb-20 prose-md">
+    <div class="flex space-x-6 justify-start items-start mb-2">
+      {{ if .Params.icon }}
+      <div class="w-16 h-16 flex-shrink-0">
+        <img class="rounded-lg flex-shrink-0" src="{{.Params.icon}}"/>
+      </div>
+      {{ else }}
+      <div class="w-16 h-16">
+        {{/* <img class="rounded-lg p-0 m-0" src="{{.Params.icon}}"/> */}}
+      </div>
+      {{ end }}
+      <div>
+        <h3 class="text-2xl font-bold m-0">{{.Params.organization}}</h3>
+        <p class="font-light">{{.Params.title}}</p>
+        <p class="text-gray-500">
+          {{ dateFormat "Jan 2006" $startDate}}
+          {{ if .Params.current_role }}
+          - Present
+          {{ else }}
+          - {{ dateFormat "Jan 2006" $endDate}}
+          {{ end }}
+            ({{ math.Ceil $diff }} Months)
+        <p>
+        {{ .Content }}
+        <p class="text-gray-500 no-underline font-light"><a href="{{.Params.website}}">{{.Params.website}}</a></p>
+      </div>
+    </div>
+  </div>
+{{ end }}
+</article>
+{{ end }}

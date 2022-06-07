@@ -1,0 +1,13 @@
+name = "Showfolio"
+license = "MIT"
+licenselink = "https://github.com/apvarun/showfolio/blob/main/LICENSE"
+description = "Modern portfolio theme for your Hugo site."
+homepage = "https://github.com/apvarun/showfolio"
+demosite = "https://showfolio.vercel.app/"
+tags = ["Hugo", "theme", "portfolio", "modern", "responsive"]
+features = ["clean", "gallery", "minimal", "minimalist", "mobile", "personal", "responsive", "simple", "tailwind", "projects", "white"]
+min_version = "0.69"
+
+[author]
+  name = "Varun A P"
+  homepage = "https://apvarun.com"

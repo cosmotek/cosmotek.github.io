@@ -1,0 +1,28 @@
+<section class="py-40">
+  <h1 class="py-10 text-3xl font-bold text-center mb-4">Here are a few of my projects...</h1>
+  <section class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto" style="min-height: 300px">
+    {{ range $index, $val :=.Site.Params.homepage.projects }}
+    <div class="relative {{ if eq (sub (mod $index  3) 1) 0 }}row-span-2{{end}} shadow-sm md:shadow-2xl">
+      <img
+        class="rounded object-cover w-full h-full"
+        loading="lazy"
+        src="{{ $val.image }}"
+      />
+      <div
+        class="absolute top-0 left-0 rounded w-full h-full bg-black bg-opacity-80 grid place-items-center opacity-0 hover:opacity-100 transition-opacity duration-200"
+      >
+        <p class="font-bold text-2xl text-white">{{ $val.title }}</p>
+        <p class="m-5 text-white">{{ $val.description }}</p>
+        <a
+          class="px-6 py-2 rounded-full bg-black text-white"
+          href="{{ $val.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View website</a
+        >
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  <h1 class="py-4 text-1xl text-center mb-4">(Ask me to see more)</h1>
+</section>

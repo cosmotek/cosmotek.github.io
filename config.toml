@@ -39,6 +39,12 @@ theme = "showfolio"
   image = "/api-commons.png"
 
 [[params.homepage.projects]]
+  title = "Flutter QR Code Generator"
+  description = "Just a simple Flutter-web interface for generating custom QR codes"
+  url = "https://github.com/cosmotek/qr_code_gen"
+  image = "/qr_code_gen.png"
+
+[[params.homepage.projects]]
   title = "LedFS"
   description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
   url = "https://github.com/cosmotek/ledfs"
