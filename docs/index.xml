@@ -6,7 +6,16 @@
     <description>Recent content on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test 123</title>
+      <link>https://cosmotek.github.io/blog/hello-world/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/blog/hello-world/</guid>
+      <description>Testing out Hugo for blogging&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Senior System Software Engineer</title>
       <link>https://cosmotek.github.io/experience/glovebox/</link>
@@ -24,24 +33,6 @@
       <guid>https://cosmotek.github.io/about/</guid>
       <description>Hey there!
 My name is Seth Moeckel, and I really enjoy designing &amp;amp; building digital products. I was about 12 years old when I started messing with computers. I really didn&amp;rsquo;t understand much, but I wanted to know how things worked, and how I could make my ideas real. I started taking appliances apart, building robots with microcontrollers, and writing small scripts for my Raspberry Pi. It took a while but I began to grasp programming, and how to build my own programs.</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://cosmotek.github.io/blog/placeholder-text/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cosmotek.github.io/blog/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text (Copy)</title>
-      <link>https://cosmotek.github.io/blog/placeholder-text-copy/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cosmotek.github.io/blog/placeholder-text-copy/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>

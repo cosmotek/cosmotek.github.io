@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on cosmotek</title>
-    <link>https://cosmotek.github.io/blog/</link>
-    <description>Recent content in Blog on cosmotek</description>
+    <title>foo on cosmotek</title>
+    <link>https://cosmotek.github.io/tags/foo/</link>
+    <description>Recent content in foo on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/tags/foo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test 123</title>
       <link>https://cosmotek.github.io/blog/hello-world/</link>

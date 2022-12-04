@@ -6,22 +6,22 @@
     <description>Recent content in Tags on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>markdown</title>
-      <link>https://cosmotek.github.io/tags/markdown/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      <title>bar</title>
+      <link>https://cosmotek.github.io/tags/bar/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://cosmotek.github.io/tags/markdown/</guid>
+      <guid>https://cosmotek.github.io/tags/bar/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>text</title>
-      <link>https://cosmotek.github.io/tags/text/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      <title>foo</title>
+      <link>https://cosmotek.github.io/tags/foo/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://cosmotek.github.io/tags/text/</guid>
+      <guid>https://cosmotek.github.io/tags/foo/</guid>
       <description></description>
     </item>
     
