@@ -14,10 +14,6 @@ cd docs
 git add .
 
 msg="deploying site $(date)"
-if [-n "$*"]; then
-	msg="$*"
-fi
-
 git commit -m "$msg"
 
 # push source to repo

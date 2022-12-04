@@ -6,6 +6,7 @@ description: "Testing out Hugo"
 summary: "Testing out Hugo for blogging..."
 tags: ["foo", "bar"]
 draft: false
+comments_enabled: true
 ---
 
 Hello world, this is a test

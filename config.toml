@@ -4,7 +4,10 @@ title = "cosmotek"
 theme = "showfolio"
 
 # disqus config
-disqusShortname = 'cosmotek'
+# disqusShortname = 'cosmotek'
+
+# google analytics config
+googleAnalytics = 'G-61FJMSP3MW'
 
 [params]
   name = "Seth Moeckel"
