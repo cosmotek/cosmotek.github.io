@@ -2,8 +2,10 @@
 author: "Seth Moeckel"
 title: "Full-text search for the database you already have"
 date: 2022-11-07
-# description: ""
-tags: ["markdown", "text"]
+description: "Exploring the basics of full-text search using PostgreSQL"
+summary: "Exploring the basics of full-text search and result ranking using PostgreSQL"
+tags: ["postgres", "sql", "search", "full-text"]
+draft: true
 # featured_image: /featured-placeholder.jpg
 ---
 

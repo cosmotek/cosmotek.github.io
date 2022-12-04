@@ -23,7 +23,7 @@
       "main",
       "meta",
       "nav",
-      "ol",
+      "noscript",
       "p",
       "path",
       "polyline",
@@ -31,7 +31,7 @@
       "rect",
       "script",
       "section",
-      "strong",
+      "span",
       "svg",
       "title",
       "ul"
@@ -43,10 +43,13 @@
       "bg-blue-100",
       "bg-blue-400",
       "bg-opacity-80",
+      "bg-orange-100",
       "bg-slate-200",
       "block",
       "border",
       "border-gray-300",
+      "border-l-4",
+      "border-orange-500",
       "card-list",
       "cursor-pointer",
       "dark:bg-blue-400",
@@ -61,6 +64,7 @@
       "dark:text-gray-100",
       "dark:text-gray-200",
       "dark:text-gray-600",
+      "dsq-brlink",
       "duration-200",
       "duration-500",
       "feather",
@@ -98,6 +102,7 @@
       "left-1/2",
       "lg:mx-24",
       "lg:prose-lg",
+      "logo-disqus",
       "m-0",
       "m-5",
       "max-w-2xl",
@@ -177,6 +182,7 @@
       "text-gray-600",
       "text-gray-800",
       "text-lg",
+      "text-orange-700",
       "text-sm",
       "text-white",
       "text-xl",
@@ -194,9 +200,8 @@
       "z-0"
     ],
     "ids": [
-      "mane-refeci-capiebant-unda-mulcebat",
-      "nav-menu",
-      "vagus-elidunt"
+      "disqus_thread",
+      "nav-menu"
     ]
   }
 }

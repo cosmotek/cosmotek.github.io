@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "cosmotek"
 theme = "showfolio"
 
+# disqus config
+disqusShortname = 'cosmotek'
+
 [params]
   name = "Seth Moeckel"
   description = "Seth Moeckel, Fullstack Software Engineer 👋"
