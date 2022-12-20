@@ -5,6 +5,7 @@ date: 2021-04-24
 description:
 keywords: ["about-us", "about-hugo", "contact"]
 type: about
+comments_enabled: true
 ---
 
 ![me_and_karalei](/about_me_pic.png)
