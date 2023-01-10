@@ -7,7 +7,7 @@
     {{ range .Data.Pages -}}
     <a class="block my-6" href="{{ .RelPermalink }}">
       {{ $title := .Params.title }}
-      <h2 class="text-xl font-semibold mb-1">{{ $title }}</h2>
+      <h2 class="text-xl font-semibold mb-1">{{ $title }}{{ if .Params.password }} <span class="text-blue-400">[Private Post]</span>{{end}}</h2>
       <div class="font-light mb-2 text-gray-800 dark:text-gray-200">
         {{ .Summary }}
       </div>

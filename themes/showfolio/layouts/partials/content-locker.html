@@ -1,0 +1,50 @@
+<div id="locker">
+  <style>
+  #keypad {
+    padding: 20px;
+
+    border-left: 6px solid black;
+  }
+
+  #keypad h3 {
+    margin-top: 0.5em;
+  }
+
+  #keypad button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+
+  #keypad input {
+    padding: 5px;
+  }
+  </style>
+  <script type="text/javascript">
+  function attempt_unlock() {
+    if (document.getElementById("keypad-input").value == "{{.password}}") {
+      document.getElementById("locker-content").style.display = "block";
+      document.getElementById("keypad").style.display = "none";
+      document.getElementById("keypad-input").value = "";
+    } else {
+      alert("incorrect password submitted, please try again.");
+      document.getElementById("keypad-input").value = "";
+    }
+  }
+  </script>
+  
+  <div id="keypad" class="bg-blue-400">
+    <h3>This content has been password protected by the author</h3>
+    <p>Please enter the password to continue...</p>
+    
+    <input id="keypad-input" type="text" placeholder="password"/>
+    <button id="keypad-button" onclick="attempt_unlock()">Unlock Content</button>
+  </div>
+  
+  <div id="locker-content" style="display:none;">
+    {{.content}}
+    {{ if .params.comments_enabled }}
+    {{- partial "github-comments.html" .params -}}
+    {{ end }}
+  </div>
+</div>
