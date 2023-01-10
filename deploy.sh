@@ -5,7 +5,6 @@ set -e
 # build the project
 rm -r docs
 hugo -t showfolio
-python3 $HOME/code/sandbox/hugo_encryptor/hugo-encryptor.py
 
 # commit changes
 mkdir -p docs
