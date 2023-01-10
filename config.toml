@@ -54,7 +54,7 @@ googleAnalytics = 'G-61FJMSP3MW'
   title = "LedFS"
   description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
   url = "https://github.com/cosmotek/ledfs"
-  image = "/ledfs.png"
+  image = "/ledfs.gif"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/seth-m-b8773b123/"
