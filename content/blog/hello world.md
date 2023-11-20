@@ -7,7 +7,11 @@ summary: "Testing out Hugo for blogging..."
 tags: ["foo", "bar"]
 draft: false
 comments_enabled: true
-password: helloworld
+# password: helloworld
+
+tool_of_choice: "Glovebox"
+tool_of_choice_icon: /glovebox_updated.jpg
+tool_of_choice_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum posuere urna nec."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in fermentum posuere urna nec. Volutpat consequat mauris nunc congue nisi vitae. Ut porttitor leo a diam sollicitudin tempor id eu nisl. Rhoncus mattis rhoncus urna neque viverra justo. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. Facilisi nullam vehicula ipsum a. Curabitur vitae nunc sed velit dignissim sodales. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Nibh praesent tristique magna sit amet purus gravida quis. Velit laoreet id donec ultrices tincidunt arcu non.

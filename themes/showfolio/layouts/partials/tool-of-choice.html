@@ -1,0 +1,17 @@
+<article class="my-6 bg-slate-200 p-6 rounded-lg">
+  <div class="flex space-x-6 justify-start items-start mb-2">
+      {{ if .icon }}
+      <div class="w-16 h-16 flex-shrink-0">
+        <img class="m-0 rounded-lg outline-2 outline-slate-200 outline-offset-2 flex-shrink-0" src="{{.icon}}"/>
+      </div>
+      {{ else }}
+      <div class="w-16 h-16 bg-slate-200 rounded-lg">
+        {{/* <img class="rounded-lg p-0 m-0" src="{{.Params.icon}}"/> */}}
+      </div>
+      {{ end }}
+      <div>
+        <p class="pb-2 m-0 text-lg capitalize">Tool of choice: <span class="font-semibold capitalize">{{ .name }}</span></p>
+        <p class="py-2 m-0">{{ .description }}</p>
+      </div>
+    </div>
+</article>

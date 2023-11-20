@@ -5,6 +5,9 @@
   {{- partial "content-locker.html" (dict "content" .Content "password" .Params.password "params" .Params) -}}
   {{ else }}
   {{ .Content }}
+  {{ if .Params.tool_of_choice }}
+  {{- partial "tool-of-choice.html" (dict "name" .Params.tool_of_choice "icon" .Params.tool_of_choice_icon "description" .Params.tool_of_choice_description) -}}
+  {{ end }}
   {{ if .Params.comments_enabled }}
   {{- partial "github-comments.html" . -}}
   {{ end }}

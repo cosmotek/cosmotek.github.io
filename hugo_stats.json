@@ -5,7 +5,6 @@
       "article",
       "body",
       "br",
-      "button",
       "circle",
       "div",
       "em",
@@ -18,7 +17,6 @@
       "hr",
       "html",
       "img",
-      "input",
       "li",
       "line",
       "link",
@@ -32,7 +30,6 @@
       "script",
       "section",
       "span",
-      "style",
       "svg",
       "title",
       "ul"
@@ -48,6 +45,7 @@
       "block",
       "border",
       "border-gray-300",
+      "capitalize",
       "card-list",
       "cursor-pointer",
       "dark:bg-blue-400",
@@ -142,10 +140,12 @@
       "p-2",
       "p-4",
       "p-6",
+      "pb-2",
       "place-items-center",
       "prose",
       "prose-blue",
       "prose-md",
+      "pt-10",
       "pt-4",
       "px-4",
       "px-6",
@@ -196,11 +196,6 @@
       "z-0"
     ],
     "ids": [
-      "keypad",
-      "keypad-button",
-      "keypad-input",
-      "locker",
-      "locker-content",
       "nav-menu"
     ]
   }
