@@ -6,7 +6,16 @@
     <description>Recent content in Experience on cosmotek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/experience/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cosmotek.github.io/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Senior DevSecOps Engineer</title>
+      <link>https://cosmotek.github.io/experience/glovebox_2nd/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmotek.github.io/experience/glovebox_2nd/</guid>
+      <description>Infrastructure &amp;amp; Security for the Glovebox Team.</description>
+    </item>
+    
     <item>
       <title>Senior System Software Engineer</title>
       <link>https://cosmotek.github.io/experience/glovebox/</link>
