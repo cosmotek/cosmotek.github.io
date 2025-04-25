@@ -7,3 +7,5 @@ date: "2017-10-01"
 end_date: "2018-10-01"
 current_role: false
 ---
+
+Founded a freelance development studio, delivering web and mobile applications for small business clients from concept through launch.

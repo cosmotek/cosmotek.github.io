@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for film photography section */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.prose h1 {
+    color: theme('colors.gray.100');
+    font-weight: 300;
+}
+
+.prose h2 {
+    color: theme('colors.gray.200');
+    font-weight: 400;
+}
+
+.prose p {
+    color: theme('colors.gray.300');
+}
+
+.prose a {
+    color: theme('colors.blue.400');
+    text-decoration: none;
+}
+
+.prose a:hover {
+    color: theme('colors.blue.300');
+}
+
+.prose img {
+    max-height: 26rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gallery lightbox positioning: hand-written rather than Tailwind's
+   fixed/absolute/inset-0/z-50 utilities, which were unreliably purged
+   depending on build ordering (a Hugo Pipes + PurgeCSS timing issue). */
+.film-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.film-lightbox-btn {
+    position: absolute;
+}
+
+.film-lightbox-btn--close {
+    top: 1rem;
+    right: 1rem;
+}
+
+.film-lightbox-btn--prev,
+.film-lightbox-btn--next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.film-lightbox-btn--prev {
+    left: 0.5rem;
+}
+
+.film-lightbox-btn--next {
+    right: 0.5rem;
+}
+
+.film-lightbox-counter {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.film-badge {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.film-thumb {
+    position: relative;
+}
+
+.film-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 640px) {
+    .film-lightbox-btn--close {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .film-lightbox-btn--prev {
+        left: 1.5rem;
+    }
+    .film-lightbox-btn--next {
+        right: 1.5rem;
+    }
+    .film-lightbox-counter {
+        bottom: 1.5rem;
+    }
+}
+
+/* Custom transitions */
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: theme('colors.gray.900');
+}
+
+::-webkit-scrollbar-thumb {
+    background: theme('colors.gray.700');
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.gray.600');
+}
+

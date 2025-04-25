@@ -14,7 +14,7 @@ googleAnalytics = 'G-61FJMSP3MW'
   description = "Seth Moeckel, Fullstack Software Engineer 👋"
   author = "Seth Moeckel"
   authorEmail = "seth.moeckel@gmail.com"
-  authorImage = "/photo.png"
+  authorImage = "/hero_avatar.jpg"
   autoDarkMode = false
 
   copyright = "Copyright © 2021 - Seth Moeckel · All rights reserved"
@@ -54,17 +54,25 @@ googleAnalytics = 'G-61FJMSP3MW'
   title = "LedFS"
   description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
   url = "https://github.com/cosmotek/ledfs"
-  image = "/ledfs.gif"
+  image = "/ledfs_optimized.jpg"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/seth-m-b8773b123/"
   github = "https://github.com/cosmotek"
-  resume = "https://docs.google.com/document/d/121mt-BFw6SAP9RMiQ3hFMm-R_MNIDw-Us4UcDI_3xUU/edit?usp=sharing"
+  resume = "/Seth_Moeckel_Resume.pdf"
   phone = "tel:740-877-2320"
   email = "mailto:seth.moeckel@gmail.com"
 
 [build]
   writeStats = true
+
+[security]
+  [security.node]
+    [security.node.permissions]
+      allowread = ['*']
+      allowaddons = ['*']
+      allowchildprocess = ['*']
+      allowworker = ['*']
 
 [markup]
   [markup.highlight]

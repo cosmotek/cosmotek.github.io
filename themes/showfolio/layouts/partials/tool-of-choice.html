@@ -2,7 +2,7 @@
   <div class="flex space-x-6 justify-start items-start mb-2">
       {{ if .icon }}
       <div class="w-16 h-16 flex-shrink-0">
-        <img class="m-0 rounded-lg outline-2 outline-slate-200 outline-offset-2 flex-shrink-0" src="{{.icon}}"/>
+        {{ partial "responsive-image.html" (dict "image" .icon "alt" .name "class" "m-0 rounded-lg outline-2 outline-slate-200 outline-offset-2 flex-shrink-0") }}
       </div>
       {{ else }}
       <div class="w-16 h-16 bg-slate-200 rounded-lg">
