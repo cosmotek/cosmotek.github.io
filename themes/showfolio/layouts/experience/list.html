@@ -6,64 +6,91 @@
   {{ .Content }}
 
   <h2 class="font-bold text-4xl">Work History</h2>
-  {{ range .Pages }}
+  
+  {{ $allPages := .Pages.ByDate.Reverse }}
+  {{ $companies := dict }}
+  {{ $orgOrder := slice }}
 
-  {{ $startDate := .Params.date | time }}
-  {{ $endDate := (cond (ne .Params.end_date nil) .Params.end_date now) | time }}
-  {{ $diff := div ($endDate.Sub $startDate).Hours 730 }}
+  {{ range $allPages }}
+    {{ $org := .Params.organization }}
+    {{ if not (in $orgOrder $org) }}
+      {{ $orgOrder = $orgOrder | append $org }}
+    {{ end }}
+    {{ $companies = merge $companies (dict $org (union (index $companies $org | default (slice)) (slice .))) }}
+  {{ end }}
 
-  <div class="mb-20 prose-md">
-    <div class="flex space-x-6 justify-start items-start mb-2">
-      {{ if .Params.icon }}
-      <div class="w-16 h-16 flex-shrink-0">
-        <img class="m-0 rounded-lg outline-2 outline-slate-200 outline-offset-2 flex-shrink-0" src="{{.Params.icon}}"/>
-      </div>
-      {{ else }}
-      <div class="w-16 h-16 bg-slate-200 rounded-lg">
-        {{/* <img class="rounded-lg p-0 m-0" src="{{.Params.icon}}"/> */}}
-      </div>
-      {{ end }}
-      <div>
-        <h3 class="text-2xl font-bold m-0">{{.Params.organization}}</h3>
-        <p class="font-light">{{.Params.title}}</p>
-        <p class="text-gray-500">
-          {{ dateFormat "Jan 2006" $startDate}}
-          {{ if .Params.current_role }}
-          - Present
-          {{ else }}
-          - {{ dateFormat "Jan 2006" $endDate}}
+  {{ range $orgOrder }}
+    {{ $org := . }}
+    {{ $unsortedPages := index $companies $org }}
+    {{ $pages := sort $unsortedPages "Params.date" "desc" }}
+    {{ $firstPage := index $pages 0 }}
+    {{ $earliestPage := index $pages (sub (len $pages) 1) }}
+    {{ $startDate := $earliestPage.Params.date | time }}
+    {{ $endDate := (cond (ne $firstPage.Params.end_date nil) $firstPage.Params.end_date now) | time }}
+
+    <div class="mb-20 prose-md">
+      <div class="flex space-x-6 justify-start items-start mb-2">
+        {{ if $firstPage.Params.icon }}
+        <div class="w-16 h-16 flex-shrink-0">
+          <img class="m-0 rounded-lg outline-2 outline-slate-200 outline-offset-2 flex-shrink-0" src="{{$firstPage.Params.icon}}"/>
+        </div>
+        {{ else }}
+        <div class="w-16 h-16 bg-slate-200 rounded-lg">
+          {{/* <img class="rounded-lg p-0 m-0" src="{{$firstPage.Params.icon}}"/> */}}
+        </div>
+        {{ end }}
+        <div>
+          <h3 class="text-2xl font-bold m-0">{{$org}}</h3>
+          <p class="text-gray-500">
+            {{ dateFormat "Jan 2006" $startDate}}
+            {{ if $firstPage.Params.current_role }}
+            - Present
+            {{ else }}
+            - {{ dateFormat "Jan 2006" $endDate}}
+            {{ end }}
+            <span class="duration"
+                  data-start="{{ $startDate.Format "2006-01-02" }}"
+                  data-end="{{ $endDate.Format "2006-01-02" }}"
+                  data-current="{{ $firstPage.Params.current_role }}">
+              ({{ partial "duration.html" (dict "start" $startDate "end" $endDate) }})
+            </span>
+          </p>
+          {{ with $firstPage.Params.website }}
+          <p class="text-gray-500 no-underline font-light"><a href="{{ . }}">{{ replaceRE `^https?://(www\.)?` "" . | strings.TrimSuffix "/" }}</a></p>
           {{ end }}
-            ({{ math.Ceil $diff }} Months)
-        <p>
-        {{ .Content }}
-        <p class="text-gray-500 no-underline font-light"><a href="{{.Params.website}}">{{.Params.website}}</a></p>
+        </div>
+      </div>
+      
+      <div class="ml-24 relative">
+        {{ if gt (len $pages) 1 }}
+        <div class="absolute left-0 top-0 bottom-0 w-[2px] bg-gray-200 dark:bg-gray-700"></div>
+        {{ end }}
+        {{ range $pages }}
+          {{ $posStartDate := .Params.date | time }}
+          {{ $posEndDate := (cond (ne .Params.end_date nil) .Params.end_date now) | time }}
+          <div class="relative pl-6 pb-6">
+            <div class="absolute left-[-4px] top-[1.75rem] w-[10px] h-[10px] rounded-full bg-gray-200 dark:bg-gray-700 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-600 hover:shadow-[0_0_8px_rgba(156,163,175,0.5)] dark:hover:shadow-[0_0_8px_rgba(75,85,99,0.5)]"></div>
+            <h4 class="text-xl font-semibold m-0">{{.Params.title}}</h4>
+            <p class="font-light">{{.Params.location}}</p>
+            <p class="text-gray-500">
+              {{ dateFormat "Jan 2006" $posStartDate}}
+              {{ if .Params.current_role }}
+              - Present
+              {{ else }}
+              - {{ dateFormat "Jan 2006" $posEndDate}}
+              {{ end }}
+              <span class="duration"
+                    data-start="{{ $posStartDate.Format "2006-01-02" }}"
+                    data-end="{{ $posEndDate.Format "2006-01-02" }}"
+                    data-current="{{ .Params.current_role }}">
+                ({{ partial "duration.html" (dict "start" $posStartDate "end" $posEndDate) }})
+              </span>
+            </p>
+            {{ .Content }}
+          </div>
+        {{ end }}
       </div>
     </div>
-  </div>
-{{ end }}
-
-{{ with .Site.Params.homepage.social.resume }}
-<div>
-<a
-  href="{{ . }}"
-  rel="noopener noreferrer"
-  target="_blank"
-  class="no-underline px-6 py-4 rounded-full font-semibold text-lg bg-blue-400 text-white hover:bg-gray-800 transition-colors dark:bg-blue-400 dark:text-black dark:hover:bg-gray-200"
-  >Download My Resume</a
->
-</div>
-{{ end }}
-
-{{ with .Site.Params.homepage.contact }}
-<div class="pt-10">
-</br/>
-</br/>
-<p class="text-lg font-semibold">👋 Want to build something great? <a 
-  href="{{ . }}"
-  rel="noopener noreferrer"
-  target="_blank"
-  class="text-blue-400 hover:text-gray-800 font-bold">Let's talk!</a></p>
-</div>
-{{ end }}
+  {{ end }}
 </article>
 {{ end }}

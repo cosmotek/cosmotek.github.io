@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="space-y-8">
+    <div>
+        <h1 class="text-4xl font-light">My Cameras</h1>
+        <p class="text-gray-400 mt-2">{{ len .Pages }} cameras in rotation, each with its own quirks and character.</p>
+    </div>
+    <div class="columns-1 md:columns-2 gap-8">
+        {{ range .Pages }}
+        <div class="mb-8 break-inside-avoid bg-gray-800/60 ring-1 ring-white/10 rounded-xl overflow-hidden">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-full h-64 object-cover">
+            {{ end }}
+            <div class="p-6">
+                <h2 class="text-2xl font-medium mb-3">{{ .Title }}</h2>
+                {{ if .Params.specs }}
+                <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 mb-5 text-sm">
+                    {{ range .Params.specs }}
+                    <span class="text-gray-500">{{ .key }}</span>
+                    <span class="text-gray-300">{{ .value }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+                <div class="prose prose-invert prose-sm max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }} 

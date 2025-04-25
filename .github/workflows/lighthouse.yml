@@ -1,0 +1,44 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Install http-server and lighthouse
+        run: npm install -g http-server lighthouse
+
+      - name: Start static server
+        run: |
+          nohup http-server public -p 8080 &
+          sleep 2
+
+      - name: Run Lighthouse
+        run: |
+          lighthouse http://127.0.0.1:8080 --quiet --chrome-flags="--no-sandbox" --output html --output-path ./lighthouse-report.html || true
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: ./lighthouse-report.html

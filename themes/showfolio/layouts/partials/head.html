@@ -7,6 +7,33 @@
   {{- if .Description }}
   <meta name="description" content="{{ .Description }}" />
   {{ end -}}
+  {{/* Open Graph / Twitter metadata */}}
+  {{ $title := cond .Title (printf "%s | %s" .Title .Site.Title) .Site.Title }}
+  <meta property="og:title" content="{{ $title }}" />
+  {{- if .Params.description }}
+  <meta property="og:description" content="{{ .Params.description }}" />
+  {{- else if .Description }}
+  <meta property="og:description" content="{{ .Description }}" />
+  {{- else }}
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+  {{- end }}
+  <meta property="og:type" content="{{ cond (isset . "IsPage") "article" "website" }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{- $image := .Params.image | default .Params.images | default .Site.Params.authorImage }}
+  {{- if $image }}
+    <meta property="og:image" content="{{ $image }}" />
+    <meta name="twitter:image" content="{{ $image }}" />
+  {{- end }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ $title }}" />
+  {{- if .Params.description }}
+  <meta name="twitter:description" content="{{ .Params.description }}" />
+  {{- else if .Description }}
+  <meta name="twitter:description" content="{{ .Description }}" />
+  {{- else }}
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
   {{- if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords "," }}" />
   {{ end -}}
@@ -16,7 +43,7 @@
   {{ hugo.Generator }}
 
   {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-  {{- if .Site.IsServer }}
+  {{- if hugo.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
   {{ else }}
   {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
@@ -27,14 +54,22 @@
   />
   {{ end -}}
 
-  {{ if .Site.Params.autoDarkMode }}
   <script>
-    // On page load or when changing themes
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.documentElement.classList.add("dark");
+    // Check for saved theme preference, otherwise use system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove('dark')
+    }
+
+    function toggleTheme() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
     }
   </script>
-  {{ end }}
 </head>

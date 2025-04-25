@@ -1,0 +1,10 @@
+{{/*
+Usage: {{ partial "duration.html" (dict "start" $start "end" $end) }}
+Renders an elapsed time span as "X yr Y mo" (or just "Y mo" under a year).
+*/}}
+{{ $start := .start }}
+{{ $end := .end }}
+{{ $totalMonths := math.Round (div ($end.Sub $start).Hours 730) }}
+{{ $years := math.Floor (div $totalMonths 12) }}
+{{ $months := sub $totalMonths (mul $years 12) }}
+{{ if gt $years 0.0 }}{{ $years }} yr{{ if gt $years 1.0 }}s{{ end }}{{ if gt $months 0.0 }} {{ $months }} mo{{ end }}{{ else }}{{ $months }} mo{{ end }}

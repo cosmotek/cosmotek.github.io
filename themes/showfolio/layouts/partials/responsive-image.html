@@ -1,0 +1,47 @@
+{{/*
+Responsive image partial
+Usage: {{ partial "responsive-image.html" (dict "image" $img "alt" "Alt text" "class" "w-full h-64 object-cover") }}
+Expects an image resource or a path. Generates srcset, WebP via Hugo image processing, and adds loading=lazy.
+*/}}
+{{ $ctx := . }}
+{{ $img := $ctx.image }}
+{{ $alt := cond (isset $ctx "alt") $ctx.alt "" }}
+{{ $class := cond (isset $ctx "class") $ctx.class "" }}
+{{ $sizes := cond (isset $ctx "sizes") $ctx.sizes "(max-width: 1024px) 100vw, 1024px" }}
+
+{{ if not $img }}
+  <img src="" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" />
+{{ else if eq (printf "%T" $img) "string" }}
+  {{ $p := resources.Get $img }}
+  {{ if $p }}
+    {{ $src := $p.Resize "1024x" }}
+    <img
+      src="{{ $src.RelPermalink }}"
+      srcset="{{ $p.Resize "400x" .RelPermalink }} 400w, {{ $p.Resize "800x" .RelPermalink }} 800w, {{ $p.Resize "1024x" .RelPermalink }} 1024w"
+      sizes="{{ $sizes }}"
+      alt="{{ $alt }}"
+      class="{{ $class }}"
+      loading="lazy"
+    />
+  {{ else }}
+    <img src="{{ $img }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" />
+  {{ end }}
+{{ else }}
+  {{/* assume it's a Page Resource or Page Image */}}
+  {{ $r := $img }}
+  {{ if eq (printf "%T" $r) "*resources.Resource" }}
+    {{ $small := $r.Fill "400x300 center" }}
+    {{ $med := $r.Fill "800x600 center" }}
+    {{ $large := $r.Fill "1200x900 center" }}
+    <picture>
+      {{ $webpSmall := $small | resources.Convert "image/webp" }}
+      {{ $webpMed := $med | resources.Convert "image/webp" }}
+      {{ $webpLarge := $large | resources.Convert "image/webp" }}
+      <source type="image/webp" srcset="{{ $webpSmall.RelPermalink }} 400w, {{ $webpMed.RelPermalink }} 800w, {{ $webpLarge.RelPermalink }} 1200w" sizes="{{ $sizes }}" />
+      <source srcset="{{ $small.RelPermalink }} 400w, {{ $med.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w" sizes="{{ $sizes }}" />
+      <img src="{{ $med.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" fetchpriority="low" />
+    </picture>
+  {{ else }}
+    <img src="{{ $img }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" />
+  {{ end }}
+{{ end }}

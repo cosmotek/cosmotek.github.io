@@ -5,7 +5,8 @@ website: https://www.gloveboxapp.com/
 title: Senior System Software Engineer
 location: Remote
 date: "2021-10-18"
-current_role: true
+end_date: "2023-02-01"
+current_role: false
 icon: /glovebox_updated.jpg
 ---
 
