@@ -3,31 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cosmotek.github.io/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/cameras/agfamatic-2008/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/cameras/canon-ae1/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/gallery/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/learnings/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/learnings/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/cameras/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/cameras/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/cameras/pentax-sp2/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film-photography/cameras/rollei-b35/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/film/cameras/yashica-mat/</loc>
+    <lastmod>2024-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/experience/glovebox-devops/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/experience/</loc>
-    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/experience/glovebox_2nd/</loc>
-    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/tags/bar/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/blog/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/tags/foo/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/tags/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cosmotek.github.io/blog/hello-world/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cosmotek.github.io/experience/glovebox/</loc>
     <lastmod>2021-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cosmotek.github.io/experience/</loc>
+    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cosmotek.github.io/about/</loc>
     <lastmod>2021-04-24T00:00:00+00:00</lastmod>
@@ -54,5 +75,7 @@
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cosmotek.github.io/categories/</loc>
+  </url><url>
+    <loc>https://cosmotek.github.io/tags/</loc>
   </url>
 </urlset>

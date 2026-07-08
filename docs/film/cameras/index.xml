@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>My Cameras on cosmotek</title>
+		<link>https://cosmotek.github.io/film/cameras/</link>
+		<description>Recent content in My Cameras on cosmotek</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 25 Apr 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://cosmotek.github.io/film/cameras/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Canon AE-1 Program</title>
+				<link>https://cosmotek.github.io/film/cameras/canon-ae1/</link>
+				<pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>https://cosmotek.github.io/film/cameras/canon-ae1/</guid>
+				<description>&lt;p&gt;The Canon AE-1 Program was my first film camera, and it&amp;rsquo;s been a reliable companion in my photography journey. Its program mode makes it beginner-friendly while still offering full manual control when needed.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yashica Mat-124G</title>
+				<link>https://cosmotek.github.io/film/cameras/yashica-mat/</link>
+				<pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>https://cosmotek.github.io/film/cameras/yashica-mat/</guid>
+				<description>&lt;p&gt;The Yashica Mat-124G is my medium format camera of choice. Its square format and waist-level viewfinder offer a unique perspective, and the image quality from its Yashinon lens is exceptional.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
