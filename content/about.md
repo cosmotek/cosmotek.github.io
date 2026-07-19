@@ -2,8 +2,8 @@
 author: Seth Moeckel
 title: About Me
 date: 2021-04-24
-description:
-keywords: ["about-us", "about-hugo", "contact"]
+description: "Learn more about Seth Moeckel, a software engineer and creator focused on web, mobile, and film photography."
+keywords: ["Seth Moeckel", "About Seth Moeckel", "software engineer", "portfolio", "photography"]
 type: about
 comments_enabled: true
 ---
@@ -18,6 +18,12 @@ Fast-forward to today, and I've been a software engineer for almost 10 years. I'
 
 Aside from my work, I enjoy time spent outdoors, cooking (mediterranean is among my favorites), and traveling to visit friends from all over.
 
+&nbsp;
+
+{{< youtube sqKHHEjQKWk >}}
+
+*17 year-old Seth presenting at a local tech meetup... Try not to judge too harshly, I've come a long way* 😂
+ 
 --- 
 
 I'm a self-taught software engineer based in Knoxville, TN (happy to work remote), and an aspiring UI/UX designer. I am a quick study and a lifelong innovator. I look forward to any opportunity to work with anyone who's passionate about solving real problems and building amazing products. 

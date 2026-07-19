@@ -1,6 +1,6 @@
 baseURL = "https://cosmotek.github.io"
 languageCode = "en-us"
-title = "cosmotek"
+title = "Seth Moeckel"
 theme = "showfolio"
 
 # disqus config
@@ -11,26 +11,76 @@ googleAnalytics = 'G-61FJMSP3MW'
 
 [params]
   name = "Seth Moeckel"
-  description = "Seth Moeckel, Fullstack Software Engineer 👋"
+  description = "Seth Moeckel is a software engineer building polished digital products, mobile experiences, and film photography projects."
   author = "Seth Moeckel"
   authorEmail = "seth.moeckel@gmail.com"
   authorImage = "/hero_avatar.jpg"
   autoDarkMode = false
+  keywords = ["Seth Moeckel", "Seth Moeckel portfolio", "Seth Moeckel software engineer", "fullstack engineer", "film photography"]
 
   copyright = "Copyright © 2021 - Seth Moeckel · All rights reserved"
   favicon = "favicon.ico"
 
 [params.homepage]
   title = "Hey 👋 I'm Seth"
-  tagline = "I build cool sh*t"
-  description = "I'm a software engineer who's passionate about building innovative & original digital experiences."
+  tagline = "I build products"
+  description = "Seth Moeckel is a software engineer who's passionate about building innovative & original digital experiences."
   contact = "mailto:seth.moeckel@gmail.com"
+
+# Photos
+[[params.homepage.photos]]
+  title = "Peekaboo"
+  description = "An inpromtu photo of a friend in prague"
+  image = "/film_pics/1AFB41AC-F843-41A3-AFC6-FB4E3C3BDD6C_4_5005_c.jpeg"
+
+[[params.homepage.photos]]
+  title = "Damnnnn this guy bikes"
+  description = "An awesome action shot of a local BMX rider"
+  image = "/film_pics/5127A8CB-9873-468C-B755-E8515BA372EB_1_105_c.jpeg"
+
+[[params.homepage.photos]]
+  title = "Christo"
+  description = "An iconic photo of a Christ the redeemer statue in Rio de Janeiro, cutting through the urban landscape"
+  image = "/film_pics/D1688655-BEEC-4967-8749-DC0436F24AC6_4_5005_c.jpeg"
+
+[[params.homepage.photos]]
+  title = "My dog is a balloon"
+  description = "I saw a kid at the Dogwood Festival with a balloon animal... I had to take a photo"
+  image = "/film_pics/63D2DBD9-0AF6-409E-A520-BB7D0034B757_1_102_o.jpeg"
+
+[[params.homepage.photos]]
+  title = "Crazy cool cathedral"
+  description = "A cathredral in Prague..."
+  image = "/film_pics/43C5CB83-900D-4F0B-B05A-20A71D3EC04D_4_5005_c.jpeg"
+
+[[params.homepage.photos]]
+  title = "Monkey!"
+  description = "A wild monkey I saw while hiking in Rio"
+  image = "/film_pics/4A547C81-8613-444A-83E3-AA9ED8E05AFC_4_5005_c.jpeg"
+
+[[params.homepage.photos]]
+  title = "Lencois boy-band"
+  description = "I tend to make friends fast... these are some cool people I met in Lencois Maranhenses, Brazil"
+  image = "/film_pics/A012F8DF-46B8-4E23-9516-05536F86B105_4_5005_c.jpeg"
+
+# Projects
+[[params.homepage.projects]]
+  title = "LedFS"
+  description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
+  url = "https://github.com/cosmotek/ledfs"
+  image = "/ledfs_optimized.jpg"
 
 [[params.homepage.projects]]
   title = "Dropship"
   description = "P2P videogame downloader with remote controls and a reverse engineered Stream integration"
   url = "https://github.com/cosmotek/dropship"
   image = "/dropship.png"
+
+[[params.homepage.projects]]
+  title = "Flutter QR Code Generator"
+  description = "Just a simple Flutter-web interface for generating custom QR codes"
+  url = "https://github.com/cosmotek/qr_code_gen"
+  image = "/qr_code_gen.png"
 
 [[params.homepage.projects]]
   title = "iVueit Mobile App"
@@ -43,18 +93,6 @@ googleAnalytics = 'G-61FJMSP3MW'
   description = "I maintain a collection of API libraries for everything from authentication to geolocation (preview is of a dev sms/email debug server)"
   url = "https://github.com/cosmotek/api-commons"
   image = "/api-commons.png"
-
-[[params.homepage.projects]]
-  title = "Flutter QR Code Generator"
-  description = "Just a simple Flutter-web interface for generating custom QR codes"
-  url = "https://github.com/cosmotek/qr_code_gen"
-  image = "/qr_code_gen.png"
-
-[[params.homepage.projects]]
-  title = "LedFS"
-  description = "I built an embedded application that allows any application to drive RGB LEDs on a Raspberry Pi using only JSON files"
-  url = "https://github.com/cosmotek/ledfs"
-  image = "/ledfs_optimized.jpg"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/seth-m-b8773b123/"

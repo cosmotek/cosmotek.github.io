@@ -2,6 +2,7 @@
 title: "Agfamatic 2008"
 date: 2024-04-25
 description: "My pocket-sized 110 film camera for spontaneous shots"
+image: "/images/cameras/agfa2008.jpg"
 type: page
 specs:
   - key: "Format"
@@ -24,10 +25,3 @@ The Agfamatic 2008 is my go-to camera for spontaneous moments. Its pocketable si
 - Simple point-and-shoot operation
 - Charming 70s design and vintage aesthetic
 - Perfect for street photography and travel
-
-## Tips for Using It
-
-1. Use higher ISO 110 film for better results in low light
-2. Get close to your subjects - the fixed focal length works best at close range
-3. Embrace the grain and softness - that's part of the charm
-4. Keep the viewfinder and lens clean for the sharpest results

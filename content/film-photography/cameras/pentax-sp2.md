@@ -31,11 +31,3 @@ The Pentax SP2 is my main 35mm camera for more serious photography. It's a robus
 ## My Experience
 
 I found this camera at a local camera shop in excellent condition. It came with a 50mm f/1.8 Takumar lens, which is incredibly sharp. The camera has never let me down, and the light meter is surprisingly accurate for its age. The M42 mount gives me access to a wide range of affordable, high-quality lenses.
-
-## Tips for Using the SP2
-
-1. The match-needle metering system takes some practice but is very accurate
-2. The self-timer is useful for long exposures
-3. Try different M42 mount lenses for varied perspectives
-4. Keep the battery contacts clean for reliable metering
-5. The mirror lock-up feature is useful for long exposures 

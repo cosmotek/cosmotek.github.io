@@ -1,7 +1,7 @@
 <section class="p-6 flex flex-col items-center">
   {{ $authorName := .Site.Params.author }}
   {{ with .Site.Params.authorImage }}
-  <div class="w-48 h-48 rounded-full mb-6 bg-blue-100 overflow-hidden">
+  <div class="w-48 h-48 rounded-full mb-6 overflow-hidden" style="background-color:#F45B69">
     {{ partial "responsive-image.html" (dict "image" . "alt" $authorName "class" "w-full h-full object-cover rounded-full") }}
   </div>
   {{ end }}
@@ -13,7 +13,8 @@
     class="text-5xl md:text-6xl font-bold text-center max-w-3xl mb-4 relative"
   >
     <div
-      class="absolute top-10 opacity-20 transform left-1/2 -translate-x-1/2 text-blue-300 z-0 w-full"
+      class="absolute top-10 opacity-20 transform left-1/2 -translate-x-1/2 z-0 w-full"
+      style="color:#F45B69"
     >
       <svg
         class="max-w-xs md:max-w-lg mx-auto w-full"
@@ -27,19 +28,23 @@
         />
       </svg>
     </div>
-    <div class="relative">{{ .Site.Params.homepage.tagline }}</div>
+    <div class="relative">
+      {{ $tagline := .Site.Params.homepage.tagline }}
+      {{ if in $tagline "products" }}
+        {{ $parts := split $tagline "products" }}
+        {{ $before := index $parts 0 }}
+        {{ $after := index $parts 1 }}
+        {{ printf "%s*<span class=\"font-bold text-red-500\">products</span>*%s" $before $after | safeHTML }}
+      {{ else }}
+        {{ $tagline }}
+      {{ end }}
+    </div>
   </div>
   <p class="font-light text-center max-w-sm mb-8">
     {{ .Site.Params.homepage.description }}
   </p>
 
-  {{ with .Site.Params.homepage.contact }}
-  <a
-    href="{{ . }}"
-    rel="noopener noreferrer"
-    target="_blank"
-    class="px-6 py-4 rounded-full font-semibold text-lg bg-blue-400 text-white hover:bg-gray-800 transition-colors dark:bg-blue-400 dark:text-black dark:hover:bg-gray-200"
-    >Get In Touch</a
-  >
-  {{ end }}
+  <div class="mt-2">
+    {{ partial "social-hero.html" . }}
+  </div>
 </section>

@@ -1,28 +1,29 @@
 <section class="py-40">
-  <h1 class="py-10 text-3xl font-bold text-center mb-4">Here are a few of my projects...</h1>
-  <section class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto" style="min-height: 300px">
-    {{ range $index, $val :=.Site.Params.homepage.projects }}
-    <div class="relative {{ if eq (sub (mod $index  3) 1) 0 }}row-span-2{{end}} shadow-sm md:shadow-2xl">
-      <img
-        class="rounded object-cover w-full h-full"
-        loading="lazy"
-        src="{{ $val.image }}"
-      />
-      <div
-        class="absolute top-0 left-0 rounded w-full h-full bg-black bg-opacity-80 grid place-items-center opacity-0 hover:opacity-100 transition-opacity duration-200"
-      >
-        <p class="font-bold text-2xl text-white">{{ $val.title }}</p>
-        <p class="m-5 text-white">{{ $val.description }}</p>
+  <h1 class="py-10 text-3xl font-bold text-center mb-8">Software Projects</h1>
+  <div class="max-w-5xl mx-auto space-y-6">
+    {{ range $index, $val := .Site.Params.homepage.projects }}
+    <article class="flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm md:flex-row md:shadow-md">
+      <div class="md:w-2/5 md:min-h-full">
+        <img
+          class="h-56 w-full object-cover md:h-full"
+          loading="lazy"
+          src="{{ $val.image }}"
+          alt="{{ $val.title }}"
+        />
+      </div>
+      <div class="flex flex-1 flex-col items-start justify-start p-6 md:p-8">
+        <h2 class="text-xl font-semibold text-gray-900">{{ $val.title }}</h2>
+        <p class="mt-3 text-gray-600">{{ $val.description }}</p>
         <a
-          class="px-6 py-2 rounded-full bg-black text-white"
+          class="mt-6 inline-flex w-fit items-center rounded-full bg-black px-5 py-2 text-sm font-medium text-white transition hover:bg-gray-800"
           href="{{ $val.url }}"
           target="_blank"
           rel="noopener noreferrer"
           >View website</a
         >
       </div>
-    </div>
+    </article>
     {{ end }}
-  </section>
-  <h1 class="py-4 text-1xl text-center mb-4">(Ask me to see more)</h1>
+  </div>
+  <h1 class="py-4 text-lg text-center mb-4">(Ask me to see more)</h1>
 </section>
